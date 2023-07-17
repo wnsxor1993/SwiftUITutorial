@@ -22,6 +22,8 @@
 		D2EFA8632A64FFA100C68DFE /* LandmarkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8622A64FFA100C68DFE /* LandmarkDetailView.swift */; };
 		D2EFA8652A6521D800C68DFE /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8642A6521D800C68DFE /* FavoriteButtonView.swift */; };
 		D2EFA8692A652AA800C68DFE /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8682A652AA800C68DFE /* DependencyInjection.swift */; };
+		D2EFA86B2A652E1D00C68DFE /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA86A2A652E1D00C68DFE /* Segment.swift */; };
+		D2EFA86D2A652EC900C68DFE /* ShapesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA86C2A652EC900C68DFE /* ShapesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		D2EFA8622A64FFA100C68DFE /* LandmarkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetailView.swift; sourceTree = "<group>"; };
 		D2EFA8642A6521D800C68DFE /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
 		D2EFA8682A652AA800C68DFE /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		D2EFA86A2A652E1D00C68DFE /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		D2EFA86C2A652EC900C68DFE /* ShapesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				D2EFA84F2A64F77100C68DFE /* Landmark.swift */,
+				D2EFA86A2A652E1D00C68DFE /* Segment.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				D2EFA85A2A64FBA000C68DFE /* LandmarkManager.swift */,
+				D2EFA86C2A652EC900C68DFE /* ShapesManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -268,7 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2EFA86B2A652E1D00C68DFE /* Segment.swift in Sources */,
 				D2EFA8502A64F77100C68DFE /* Landmark.swift in Sources */,
+				D2EFA86D2A652EC900C68DFE /* ShapesManager.swift in Sources */,
 				D2EFA8632A64FFA100C68DFE /* LandmarkDetailView.swift in Sources */,
 				D2EFA8692A652AA800C68DFE /* DependencyInjection.swift in Sources */,
 				D2EFA8392A61229200C68DFE /* ContentView.swift in Sources */,
