@@ -9,11 +9,11 @@ import SwiftUI
 
 struct LandmarkListView: View {
     
-    private let landmarks: [LandMark]
+    @EnvironmentObject var landmarkManager: LandmarkManager
     @State private var showFavoritesOnly: Bool = false
     
     private var filteredLandmarks: [LandMark] {
-        landmarks.filter {
+        landmarkManager.landmarks.filter {
             (!showFavoritesOnly || $0.isFavorite)
         }
     }
@@ -27,7 +27,9 @@ struct LandmarkListView: View {
 
                 ForEach(filteredLandmarks) { landmark in
                     NavigationLink {
-                        LandmarkDetailView(landmark: landmark)
+                        DependencyInjection(manager: landmarkManager) {
+                            LandmarkDetailView(landmark: landmark)
+                        }
 
                     } label: {
                         LandmarkRowView(landmark: landmark)
@@ -37,21 +39,17 @@ struct LandmarkListView: View {
             .navigationTitle("Landmarks")
         }
     }
-    
-    init(landmarks: [LandMark]) {
-        self.landmarks = landmarks
-    }
 }
 
 struct LandmarkListView_Previews: PreviewProvider {
     
-    static let landMarkManager: LandmarkManager = .init()
-    
     static var previews: some View {
         ForEach(["iPhone SE (2nd generation)", "iPhone XS Max"], id: \.self) { deviceName in
-            LandmarkListView(landmarks: landMarkManager.landmarks)
-                .previewDevice(.init(rawValue: deviceName))
-                .previewDisplayName(deviceName)
+            DependencyInjection(manager: LandmarkManager()) {
+                LandmarkListView()
+                    .previewDevice(.init(rawValue: deviceName))
+                    .previewDisplayName(deviceName)
+            }
         }
     }
 }

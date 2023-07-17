@@ -21,6 +21,7 @@
 		D2EFA8612A64FDFE00C68DFE /* LandmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8602A64FDFE00C68DFE /* LandmarkListView.swift */; };
 		D2EFA8632A64FFA100C68DFE /* LandmarkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8622A64FFA100C68DFE /* LandmarkDetailView.swift */; };
 		D2EFA8652A6521D800C68DFE /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8642A6521D800C68DFE /* FavoriteButtonView.swift */; };
+		D2EFA8692A652AA800C68DFE /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8682A652AA800C68DFE /* DependencyInjection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D2EFA8602A64FDFE00C68DFE /* LandmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkListView.swift; sourceTree = "<group>"; };
 		D2EFA8622A64FFA100C68DFE /* LandmarkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetailView.swift; sourceTree = "<group>"; };
 		D2EFA8642A6521D800C68DFE /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
+		D2EFA8682A652AA800C68DFE /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				D2EFA8662A65224200C68DFE /* Components */,
+				D2EFA8672A652A6600C68DFE /* CommonView */,
 				D2EFA8512A64F79F00C68DFE /* MainScene */,
 				D2EFA85E2A64FDE500C68DFE /* DetailScene */,
 			);
@@ -182,9 +185,17 @@
 		D2EFA8662A65224200C68DFE /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				D2EFA8642A6521D800C68DFE /* FavoriteButtonView.swift */,
+				D2EFA8682A652AA800C68DFE /* DependencyInjection.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		D2EFA8672A652A6600C68DFE /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				D2EFA8642A6521D800C68DFE /* FavoriteButtonView.swift */,
+			);
+			path = CommonView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			files = (
 				D2EFA8502A64F77100C68DFE /* Landmark.swift in Sources */,
 				D2EFA8632A64FFA100C68DFE /* LandmarkDetailView.swift in Sources */,
+				D2EFA8692A652AA800C68DFE /* DependencyInjection.swift in Sources */,
 				D2EFA8392A61229200C68DFE /* ContentView.swift in Sources */,
 				D2EFA8612A64FDFE00C68DFE /* LandmarkListView.swift in Sources */,
 				D2EFA8582A64FA3A00C68DFE /* JSONConvertService.swift in Sources */,

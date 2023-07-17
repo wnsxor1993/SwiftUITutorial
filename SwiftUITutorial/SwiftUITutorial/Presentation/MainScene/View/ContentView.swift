@@ -12,13 +12,17 @@ struct ContentView: View {
     @EnvironmentObject var landmarkManager: LandmarkManager
     
     var body: some View {
-        LandmarkListView(landmarks: landmarkManager.landmarks)
+        DependencyInjection(manager: landmarkManager) {
+            LandmarkListView()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
+    
     static var previews: some View {
-        ContentView()
-            .environmentObject(LandmarkManager())
+        DependencyInjection(manager: LandmarkManager()) {
+            LandmarkListView()
+        }
     }
 }
