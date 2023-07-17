@@ -1,13 +1,14 @@
 //
-//  ContentView.swift
+//  LandmarkDetailView.swift
 //  SwiftUITutorial
 //
-//  Created by Zeto on 2023/07/14.
+//  Created by Zeto on 2023/07/17.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct LandmarkDetailView: View {
+    
     var body: some View {
         VStack {
             MapView()
@@ -43,8 +44,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LandmarkDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LandmarkDetailView()
     }
 }
