@@ -20,6 +20,7 @@
 		D2EFA85D2A64FCC200C68DFE /* LandmarkRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA85C2A64FCC200C68DFE /* LandmarkRowView.swift */; };
 		D2EFA8612A64FDFE00C68DFE /* LandmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8602A64FDFE00C68DFE /* LandmarkListView.swift */; };
 		D2EFA8632A64FFA100C68DFE /* LandmarkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8622A64FFA100C68DFE /* LandmarkDetailView.swift */; };
+		D2EFA8652A6521D800C68DFE /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8642A6521D800C68DFE /* FavoriteButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D2EFA85C2A64FCC200C68DFE /* LandmarkRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRowView.swift; sourceTree = "<group>"; };
 		D2EFA8602A64FDFE00C68DFE /* LandmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkListView.swift; sourceTree = "<group>"; };
 		D2EFA8622A64FFA100C68DFE /* LandmarkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetailView.swift; sourceTree = "<group>"; };
+		D2EFA8642A6521D800C68DFE /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		D2EFA84B2A64F73B00C68DFE /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D2EFA8662A65224200C68DFE /* Components */,
 				D2EFA8512A64F79F00C68DFE /* MainScene */,
 				D2EFA85E2A64FDE500C68DFE /* DetailScene */,
 			);
@@ -174,6 +177,14 @@
 				D2EFA8462A64D78600C68DFE /* MapView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D2EFA8662A65224200C68DFE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D2EFA8642A6521D800C68DFE /* FavoriteButtonView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 				D2EFA85B2A64FBA000C68DFE /* LandmarkManager.swift in Sources */,
 				D2EFA8452A64D38900C68DFE /* CircleImageView.swift in Sources */,
 				D2EFA8562A64F93000C68DFE /* JSONFileService.swift in Sources */,
+				D2EFA8652A6521D800C68DFE /* FavoriteButtonView.swift in Sources */,
 				D2EFA85D2A64FCC200C68DFE /* LandmarkRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
