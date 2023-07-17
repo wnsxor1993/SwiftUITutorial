@@ -10,7 +10,7 @@ import SwiftUI
 import CoreLocation
 
 // TODO: Foundation 외의 모듈 제거 방향
-struct LandMark: Hashable, Codable {
+struct LandMark: Hashable, Codable, Identifiable {
     
     var id: Int
     var name: String
