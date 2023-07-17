@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    private let landmarkManager: LandmarkManager = .init()
+    @EnvironmentObject var landmarkManager: LandmarkManager
     
     var body: some View {
         LandmarkListView(landmarks: landmarkManager.landmarks)
@@ -19,5 +19,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(LandmarkManager())
     }
 }

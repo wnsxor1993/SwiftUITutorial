@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import Combine
 
-final class LandmarkManager {
+final class LandmarkManager: ObservableObject {
     
     let landmarkFileName: String = "landmarkData.json"
-    var landmarks: [LandMark] = []
+    @Published var landmarks: [LandMark] = []
     
     init() {
         self.configureDatas()

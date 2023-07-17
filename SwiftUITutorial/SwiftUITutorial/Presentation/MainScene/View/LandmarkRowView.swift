@@ -29,9 +29,10 @@ struct LandmarkRowView: View {
 }
 
 struct LandmarkRowView_Previews: PreviewProvider {
+    
+    static let landMarkManager: LandmarkManager = .init()
+    
     static var previews: some View {
-        let landMarkManager: LandmarkManager = .init()
-        
         Group {
             LandmarkRowView(landmark: landMarkManager.landmarks[0])
             LandmarkRowView(landmark: landMarkManager.landmarks[1])
