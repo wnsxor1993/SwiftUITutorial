@@ -1,5 +1,5 @@
 //
-//  BadgeView.swift
+//  BadgeBackView.swift
 //  SwiftUITutorial
 //
 //  Created by Zeto on 2023/07/19.
@@ -7,24 +7,24 @@
 
 import SwiftUI
 
-struct BadgeView: View {
+struct BadgeBackView: View {
     
     private let hexagonManager: ShapesManager = .init(shape: .hexagon)
     
     var body: some View {
         GeometryReader { geometry in
             self.configureHexagonPath(with: geometry)
-            .fill(.linearGradient(
-                .init(colors: [.tutorialPink, .tutorialOrange]),
-                startPoint: .init(x: 0.5, y: 0),
-                endPoint: .init(x: 0.5, y: 0.6)
-            ))
+                .fill(.linearGradient(
+                    .init(colors: [.tutorialPink, .tutorialOrange]),
+                    startPoint: .init(x: 0.5, y: 0),
+                    endPoint: .init(x: 0.5, y: 0.6)
+                ))
         }
         .aspectRatio(1, contentMode: .fit)
     }
 }
 
-private extension BadgeView {
+private extension BadgeBackView {
     
     func configureHexagonPath(with geometry: GeometryProxy) -> Path {
         var width: CGFloat = min(geometry.size.width, geometry.size.height)
@@ -67,9 +67,9 @@ private extension BadgeView {
     }
 }
 
-struct BadgeView_Previews: PreviewProvider {
+struct BadgeBackView_Previews: PreviewProvider {
     
     static var previews: some View {
-        BadgeView()
+        BadgeBackView()
     }
 }

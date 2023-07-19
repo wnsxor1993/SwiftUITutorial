@@ -11,4 +11,5 @@ extension Color {
     
     static var tutorialPink: Color { return .init("TutorialPink") }
     static var tutorialOrange: Color { return .init("TutorialOrange") }
+    static var tutorialBlue: Color { return .init("TutorialBlue") }
 }
