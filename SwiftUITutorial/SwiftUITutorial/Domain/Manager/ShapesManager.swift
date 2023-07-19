@@ -7,6 +7,7 @@
 
 import CoreGraphics
 
+// MARK: 다양한 도형 생성 객체
 class ShapesManager {
     
     enum Shape {
@@ -15,8 +16,8 @@ class ShapesManager {
     
     private let shape: Shape
     
-    private var segments: [Segment] = []
-    private var adjustment: CGFloat = 0
+    private(set) var segments: [Segment] = []
+    private(set) var adjustment: CGFloat = 0
     
     init(shape: Shape) {
         self.shape = shape
