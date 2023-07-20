@@ -28,6 +28,7 @@
 		D2EFA8722A679FA200C68DFE /* Color +.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8712A679FA200C68DFE /* Color +.swift */; };
 		D2EFA8742A67A2ED00C68DFE /* BadgeSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8732A67A2ED00C68DFE /* BadgeSymbolView.swift */; };
 		D2EFA8772A67CF8C00C68DFE /* RotateBadgeSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8762A67CF8C00C68DFE /* RotateBadgeSymbolView.swift */; };
+		D2EFA87C2A68EF1000C68DFE /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA87B2A68EF1000C68DFE /* BadgeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		D2EFA8712A679FA200C68DFE /* Color +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color +.swift"; sourceTree = "<group>"; };
 		D2EFA8732A67A2ED00C68DFE /* BadgeSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSymbolView.swift; sourceTree = "<group>"; };
 		D2EFA8762A67CF8C00C68DFE /* RotateBadgeSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateBadgeSymbolView.swift; sourceTree = "<group>"; };
+		D2EFA87B2A68EF1000C68DFE /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 		D2EFA8752A67CF7300C68DFE /* Badge */ = {
 			isa = PBXGroup;
 			children = (
+				D2EFA87B2A68EF1000C68DFE /* BadgeView.swift */,
 				D2EFA86E2A67998900C68DFE /* BadgeBackView.swift */,
 				D2EFA8762A67CF8C00C68DFE /* RotateBadgeSymbolView.swift */,
 				D2EFA8732A67A2ED00C68DFE /* BadgeSymbolView.swift */,
@@ -318,6 +321,7 @@
 				D2EFA8372A61229200C68DFE /* SwiftUITutorialApp.swift in Sources */,
 				D2EFA85B2A64FBA000C68DFE /* LandmarkManager.swift in Sources */,
 				D2EFA8452A64D38900C68DFE /* CircleImageView.swift in Sources */,
+				D2EFA87C2A68EF1000C68DFE /* BadgeView.swift in Sources */,
 				D2EFA8562A64F93000C68DFE /* JSONFileService.swift in Sources */,
 				D2EFA8652A6521D800C68DFE /* FavoriteButtonView.swift in Sources */,
 				D2EFA85D2A64FCC200C68DFE /* LandmarkRowView.swift in Sources */,
