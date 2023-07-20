@@ -13,7 +13,7 @@ struct Hike: Codable, Hashable {
     let name: String
     let distance: Double
     let difficulty: Int
-    let observation: [Observation]
+    let observations: [Observation]
     
     static var formatter: LengthFormatter = .init()
     
@@ -21,12 +21,12 @@ struct Hike: Codable, Hashable {
         Self.formatter
             .string(fromValue: distance, unit: .kilometer)
     }
-}
-
-struct Observation: Codable, Hashable {
     
-    var distanceFromStart: Double
-    var evelation: Range<Double>
-    var pace: Range<Double>
-    var heartRate: Range<Double>
+    struct Observation: Codable, Hashable {
+        
+        var distanceFromStart: Double
+        var elevation: Range<Double>
+        var pace: Range<Double>
+        var heartRate: Range<Double>
+    }
 }

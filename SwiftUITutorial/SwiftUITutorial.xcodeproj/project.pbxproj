@@ -32,6 +32,11 @@
 		D2EFA87E2A68FCFF00C68DFE /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = D2EFA87D2A68FCFE00C68DFE /* hikeData.json */; };
 		D2EFA8802A68FD1D00C68DFE /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA87F2A68FD1D00C68DFE /* Hike.swift */; };
 		D2EFA8822A68FDE700C68DFE /* HikeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8812A68FDE700C68DFE /* HikeManager.swift */; };
+		D2EFA8892A68FED400C68DFE /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8852A68FED400C68DFE /* GraphCapsule.swift */; };
+		D2EFA88A2A68FED400C68DFE /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8862A68FED400C68DFE /* HikeDetail.swift */; };
+		D2EFA88B2A68FED400C68DFE /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8872A68FED400C68DFE /* HikeGraph.swift */; };
+		D2EFA88C2A68FED400C68DFE /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8882A68FED400C68DFE /* HikeView.swift */; };
+		D2EFA88F2A69001700C68DFE /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA88E2A69001700C68DFE /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +67,11 @@
 		D2EFA87D2A68FCFE00C68DFE /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hikeData.json; path = ../../../../../Downloads/AnimatingViewsAndTransitions/Resources/hikeData.json; sourceTree = "<group>"; };
 		D2EFA87F2A68FD1D00C68DFE /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
 		D2EFA8812A68FDE700C68DFE /* HikeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeManager.swift; sourceTree = "<group>"; };
+		D2EFA8852A68FED400C68DFE /* GraphCapsule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GraphCapsule.swift; path = ../../../../../../../Downloads/AnimatingViewsAndTransitions/Resources/Hikes/GraphCapsule.swift; sourceTree = "<group>"; };
+		D2EFA8862A68FED400C68DFE /* HikeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HikeDetail.swift; path = ../../../../../../../Downloads/AnimatingViewsAndTransitions/Resources/Hikes/HikeDetail.swift; sourceTree = "<group>"; };
+		D2EFA8872A68FED400C68DFE /* HikeGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HikeGraph.swift; path = ../../../../../../../Downloads/AnimatingViewsAndTransitions/Resources/Hikes/HikeGraph.swift; sourceTree = "<group>"; };
+		D2EFA8882A68FED400C68DFE /* HikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HikeView.swift; path = ../../../../../../../Downloads/AnimatingViewsAndTransitions/Resources/Hikes/HikeView.swift; sourceTree = "<group>"; };
+		D2EFA88E2A69001700C68DFE /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +126,7 @@
 		D2EFA84A2A64F72700C68DFE /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				D2EFA88D2A69000000C68DFE /* Util */,
 				D2EFA8592A64FB9100C68DFE /* Manager */,
 				D2EFA8542A64F91C00C68DFE /* Service */,
 			);
@@ -129,6 +140,7 @@
 				D2EFA8672A652A6600C68DFE /* CommonView */,
 				D2EFA8512A64F79F00C68DFE /* MainScene */,
 				D2EFA85E2A64FDE500C68DFE /* DetailScene */,
+				D2EFA8832A68FEAA00C68DFE /* HikeScene */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -244,6 +256,33 @@
 			path = Badge;
 			sourceTree = "<group>";
 		};
+		D2EFA8832A68FEAA00C68DFE /* HikeScene */ = {
+			isa = PBXGroup;
+			children = (
+				D2EFA8842A68FEC600C68DFE /* View */,
+			);
+			path = HikeScene;
+			sourceTree = "<group>";
+		};
+		D2EFA8842A68FEC600C68DFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2EFA8882A68FED400C68DFE /* HikeView.swift */,
+				D2EFA8862A68FED400C68DFE /* HikeDetail.swift */,
+				D2EFA8872A68FED400C68DFE /* HikeGraph.swift */,
+				D2EFA8852A68FED400C68DFE /* GraphCapsule.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2EFA88D2A69000000C68DFE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D2EFA88E2A69001700C68DFE /* Calculator.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -320,13 +359,17 @@
 				D2EFA8742A67A2ED00C68DFE /* BadgeSymbolView.swift in Sources */,
 				D2EFA8802A68FD1D00C68DFE /* Hike.swift in Sources */,
 				D2EFA8502A64F77100C68DFE /* Landmark.swift in Sources */,
+				D2EFA88F2A69001700C68DFE /* Calculator.swift in Sources */,
 				D2EFA86D2A652EC900C68DFE /* ShapesManager.swift in Sources */,
+				D2EFA8892A68FED400C68DFE /* GraphCapsule.swift in Sources */,
+				D2EFA88C2A68FED400C68DFE /* HikeView.swift in Sources */,
 				D2EFA8632A64FFA100C68DFE /* LandmarkDetailView.swift in Sources */,
 				D2EFA8692A652AA800C68DFE /* DependencyInjection.swift in Sources */,
 				D2EFA8772A67CF8C00C68DFE /* RotateBadgeSymbolView.swift in Sources */,
 				D2EFA8392A61229200C68DFE /* ContentView.swift in Sources */,
 				D2EFA8612A64FDFE00C68DFE /* LandmarkListView.swift in Sources */,
 				D2EFA8582A64FA3A00C68DFE /* JSONConvertService.swift in Sources */,
+				D2EFA88B2A68FED400C68DFE /* HikeGraph.swift in Sources */,
 				D2EFA86F2A67998900C68DFE /* BadgeBackView.swift in Sources */,
 				D2EFA8472A64D78600C68DFE /* MapView.swift in Sources */,
 				D2EFA8372A61229200C68DFE /* SwiftUITutorialApp.swift in Sources */,
@@ -337,6 +380,7 @@
 				D2EFA8652A6521D800C68DFE /* FavoriteButtonView.swift in Sources */,
 				D2EFA8822A68FDE700C68DFE /* HikeManager.swift in Sources */,
 				D2EFA85D2A64FCC200C68DFE /* LandmarkRowView.swift in Sources */,
+				D2EFA88A2A68FED400C68DFE /* HikeDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
