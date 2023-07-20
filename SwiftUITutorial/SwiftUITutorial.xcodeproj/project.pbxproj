@@ -38,6 +38,7 @@
 		D2EFA88C2A68FED400C68DFE /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8882A68FED400C68DFE /* HikeView.swift */; };
 		D2EFA88F2A69001700C68DFE /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA88E2A69001700C68DFE /* Calculator.swift */; };
 		D2EFA8912A69027200C68DFE /* AnyTransition +.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8902A69027200C68DFE /* AnyTransition +.swift */; };
+		D2EFA8932A69037F00C68DFE /* Animation +.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFA8922A69037F00C68DFE /* Animation +.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		D2EFA8882A68FED400C68DFE /* HikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HikeView.swift; path = ../../../../../../../Downloads/AnimatingViewsAndTransitions/Resources/Hikes/HikeView.swift; sourceTree = "<group>"; };
 		D2EFA88E2A69001700C68DFE /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		D2EFA8902A69027200C68DFE /* AnyTransition +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition +.swift"; sourceTree = "<group>"; };
+		D2EFA8922A69037F00C68DFE /* Animation +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animation +.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +246,7 @@
 			children = (
 				D2EFA8712A679FA200C68DFE /* Color +.swift */,
 				D2EFA8902A69027200C68DFE /* AnyTransition +.swift */,
+				D2EFA8922A69037F00C68DFE /* Animation +.swift */,
 			);
 			path = "Extension +";
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				D2EFA88B2A68FED400C68DFE /* HikeGraph.swift in Sources */,
 				D2EFA86F2A67998900C68DFE /* BadgeBackView.swift in Sources */,
 				D2EFA8472A64D78600C68DFE /* MapView.swift in Sources */,
+				D2EFA8932A69037F00C68DFE /* Animation +.swift in Sources */,
 				D2EFA8912A69027200C68DFE /* AnyTransition +.swift in Sources */,
 				D2EFA8372A61229200C68DFE /* SwiftUITutorialApp.swift in Sources */,
 				D2EFA85B2A64FBA000C68DFE /* LandmarkManager.swift in Sources */,
